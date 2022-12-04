@@ -1,0 +1,8 @@
+rootProject.name = 'utils'
+include(':redis')
+
+rootProject.children.each {
+    project ->
+        println("project.name : ${project.name}")
+        project.buildFileName = "build-${project.name}.gradle"
+}
