@@ -1,0 +1,15 @@
+redis:
+  host: localhost
+  port: 63379
+  password: redisUtil!
+
+spring:
+  redis:
+    host: ${redis.host}
+    port: ${redis.port}
+    password: ${redis.password}
+    session:
+      store-type: redis
+      redis:
+        flush-mode: ON_SAVE
+

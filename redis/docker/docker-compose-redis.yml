@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  redis-util:
+    image: redis:alpine
+    command: redis-server --requirepass redisUtil!
+    container_name: redis-util
+#    hostname: hostname
+    ports:
+      - 63379:6379
+
