@@ -1,0 +1,170 @@
+= Rest Docs API
+subtitle
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+:restdocs-default-end-point: /rest-docs
+
+:restdocs-get: {restdocs-default-end-point}/get
+:restdocs-post: {restdocs-default-end-point}/post
+:restdocs-put: {restdocs-default-end-point}/put
+:restdocs-patch: {restdocs-default-end-point}/patch
+:restdocs-delete: {restdocs-default-end-point}/delete
+
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+== GET API
+
+==== 1. Http Method
+- Get
+
+==== 2. End Point
+- {restdocs-default-end-point}/sample
+
+=== 3. curl
+include::{snippets}{restdocs-get}/curl-request.adoc[]
+
+=== 4. Information
+
+==== Request Header
+include::{snippets}{restdocs-get}/request-headers.adoc[]
+
+// ==== Request Field
+// include::{snippets}{restdocs-get}/request-fields.adoc[]
+
+==== Response Fields
+include::{snippets}{restdocs-get}/response-fields.adoc[]
+
+=== 5. Http Sample
+
+==== Request
+include::{snippets}{restdocs-get}/http-request.adoc[]
+
+==== Response
+include::{snippets}{restdocs-get}/http-response.adoc[]
+
+== POST API
+
+==== 1. Http Method
+- Post
+
+==== 2. End Point
+- {restdocs-default-end-point}
+
+=== 3. curl
+include::{snippets}{restdocs-post}/curl-request.adoc[]
+
+=== 4. Information
+
+==== Request Header
+include::{snippets}{restdocs-post}/request-headers.adoc[]
+
+==== Request Field
+include::{snippets}{restdocs-post}/request-fields.adoc[]
+
+==== Response Fields
+include::{snippets}{restdocs-post}/response-fields.adoc[]
+
+=== 5. Http Sample
+
+==== Request
+include::{snippets}{restdocs-post}/http-request.adoc[]
+
+==== Response
+include::{snippets}{restdocs-post}/http-response.adoc[]
+
+== PUT API
+
+==== 1. Http Method
+- Put
+
+==== 2. End Point
+- {restdocs-default-end-point}
+
+=== 3. curl
+include::{snippets}{restdocs-put}/curl-request.adoc[]
+
+=== 4. Information
+
+==== Request Header
+include::{snippets}{restdocs-put}/request-headers.adoc[]
+
+==== Request Field
+include::{snippets}{restdocs-put}/request-fields.adoc[]
+
+==== Response Fields
+include::{snippets}{restdocs-put}/response-fields.adoc[]
+
+=== 5. Http Sample
+
+==== Request
+include::{snippets}{restdocs-put}/http-request.adoc[]
+
+==== Response
+include::{snippets}{restdocs-put}/http-response.adoc[]
+
+== PATCH API
+
+==== 1. Http Method
+- Patch
+
+==== 2. End Point
+- {restdocs-default-end-point}
+
+=== 3. curl
+include::{snippets}{restdocs-patch}/curl-request.adoc[]
+
+=== 4. Information
+
+==== Request Header
+include::{snippets}{restdocs-patch}/request-headers.adoc[]
+
+==== Request Field
+include::{snippets}{restdocs-patch}/request-fields.adoc[]
+
+==== Response Fields
+include::{snippets}{restdocs-patch}/response-fields.adoc[]
+
+=== 5. Http Sample
+
+==== Request
+include::{snippets}{restdocs-patch}/http-request.adoc[]
+
+==== Response
+include::{snippets}{restdocs-patch}/http-response.adoc[]
+
+== DELETE API
+
+==== 1. Http Method
+- Delete
+
+==== 2. End Point
+- {restdocs-default-end-point}
+
+=== 3. curl
+include::{snippets}{restdocs-delete}/curl-request.adoc[]
+
+=== 4. Information
+
+==== Request Header
+include::{snippets}{restdocs-delete}/request-headers.adoc[]
+
+==== Request Field
+include::{snippets}{restdocs-delete}/request-fields.adoc[]
+
+==== Response Fields
+include::{snippets}{restdocs-delete}/response-fields.adoc[]
+
+=== 5. Http Sample
+
+==== Request
+include::{snippets}{restdocs-delete}/http-request.adoc[]
+
+==== Response
+include::{snippets}{restdocs-delete}/http-response.adoc[]
