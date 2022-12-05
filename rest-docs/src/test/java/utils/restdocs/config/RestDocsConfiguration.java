@@ -21,12 +21,12 @@ public class RestDocsConfiguration {
     }
     public static RestDocumentationResultHandler customDocument(String identifier, Snippet... snippets) {
         return document(identifier
-                     , setDocumentRequest()
-                     , getDocumentResponse()
+                     , customRequestPreprocessor()
+                     , customResponsePreprocessor()
                      , snippets);
     }
 
-    private static OperationRequestPreprocessor setDocumentRequest() {
+    private static OperationRequestPreprocessor customRequestPreprocessor() {
         return preprocessRequest(
             modifyUris()
                     .scheme("http")
@@ -36,7 +36,7 @@ public class RestDocsConfiguration {
                 , prettyPrint()
         );
     }
-    private static OperationResponsePreprocessor getDocumentResponse() {
+    private static OperationResponsePreprocessor customResponsePreprocessor() {
         return preprocessResponse(prettyPrint());
     }
 
